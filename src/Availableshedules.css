@@ -1,0 +1,158 @@
+.schedule-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  width: 280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.card button {
+  padding: 10px 20px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.card button:hover:not(:disabled) {
+  background: #05d9ff;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-content h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #00c6ff;
+  color: black;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: #05d9ff;
+}
+
+
+
+.ticket-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 380px;
+  margin: 20px auto;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ticket-card:hover {
+  transform: scale(1.02);
+}
+
+.ticket-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00c6ff;
+}
+
+.ticket-info {
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.ticket-info span {
+  font-weight: bold;
+  color: #05d9ff;
+}

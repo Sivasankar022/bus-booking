@@ -1,0 +1,106 @@
+.bus-booking-container {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.schedule-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-3px);
+}
+
+.schedule-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.schedule-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.schedule-card button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-card button:hover {
+  background-color: #0056b3;
+}
+
+.schedule-card button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.modal-content input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-right: 10px;
+}
+
+/* Confirmation Popup */
+.confirmation-popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 10;
+}

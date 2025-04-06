@@ -1,0 +1,40 @@
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    padding: 50px;
+  }
+  
+  .home-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .home-container p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  .book-btn {
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #ff7b00;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .book-btn:hover {
+    background: #ff5500;
+  }
+  

@@ -1,0 +1,10 @@
+.auth-navbar {
+    position: fixed;  /* Fixes navbar at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
